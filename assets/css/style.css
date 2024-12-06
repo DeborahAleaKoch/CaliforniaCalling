@@ -33,59 +33,64 @@ img {
 
 header {
   background-color: black;
-  height: 70.7vh;
-  position: relative;
+  height: 55vw;
   color: white;
-  padding-bottom: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid red;
+  margin-bottom: 20px;
 }
 
 .lineImg {
-  height: 18vh;
-  width: 1px;
-  position: absolute;
-  top: 0;
-  left: 50%;
+  height: 20vw;
+  width: 10px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5em;
 }
 
 .topSection {
-  position: relative;
-  top: 30%;
+  /* background-color: black; */
+  top: 50vh;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 15em;
 }
 
 header p {
   font-family: var(--work);
   font-size: 2em;
-  padding-bottom: 2rem;
 }
 
 header h1 {
   font-family: var(--inter);
   font-size: 9.6em;
   line-height: 75%;
-  
 }
 
 .style-h1 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px white;
   font-family: var(--work);
-  padding-bottom: 1.5%;
+  padding-bottom: 2px;
 }
 
 nav img {
-  width: 4.5%;
+  width: 4vw;
 }
 
 nav {
+  width: 80%;
   display: flex;
   justify-content: space-between;
   margin: var(--margin-l-r);
-  position: relative;
-  top: 50%;
- 
+  top: 30em;
+  margin-bottom: 10px;
+  border: 2px solid pink;
 }
 
 nav button {
@@ -95,25 +100,33 @@ nav button {
   line-height: 3vh;
   padding: 0 2%;
   border: 1px solid #aaaaaa;
+  transition: 0.3s ease-in-out 0.3s;
 }
 
-nav button:hover{
+nav button:hover {
   background-color: white;
   color: black;
-  transition: 0.3s ease-in-out;
 }
-
 
 /* #MAIN */
-.heroSection{
-  background-color: black;
-  height: 150vh;
-  color: white;
-  padding: var(--margin-l-r);
-  
+main {
+  border: 5px solid green;
+  height: 290em;
+  /* background-color: blueviolet; */
 }
 
-.hero{
+.heroSection {
+  background-color: black;
+  height: 120em;
+  border: 5px solid orangered;
+}
+.heroSection {
+  background-color: black;
+  color: white;
+  padding: var(--margin-l-r);
+}
+
+.hero {
   font-family: var(--inter);
   font-weight: 600;
   font-size: 8vw;
@@ -123,23 +136,143 @@ nav button:hover{
 .heroSection article p {
   font-family: var(--work);
   font-size: 1.4em;
-  margin-bottom: 1vh;
+  margin-bottom: 1em;
 }
 
-.heroSection h2{
+.heroSection h2 {
   font-size: 8.2em;
   font-family: var(--inter);
   font-weight: 600;
   margin-bottom: 2vh;
 }
-
-.mapPosition{
+/* !!Vielleicht als backgound anlegen?? */
+.mapPosition {
   position: relative;
 }
 
-.map{
-position: absolute;
-width: 38%;
-left: 66%;
-top: -20%;
+.map {
+  position: absolute;
+  width: 38%;
+  left: 68%;
+  top: -18%;
+}
+
+/* # Main images and Text */
+/* .flex-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.mainImg {
+  width: 45em;
+  border: 3px solid deeppink;
+}
+
+h3 {
+  font-family: var(--inter);
+  font-size: 8.3rem;
+}
+.stuckSize {
+  font-family: var(--work);
+  font-size: 1.6em;
+  line-height: 2em;
+}
+
+.images {
+  width: 20%;
+  object-fit: contain;
+}
+
+.img-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: 300px; */
+  align-items: center;
+}
+
+.img1 {
+  position: relative;
+  top: -5em;
+  left: 30%;
+  z-index: 1;
+}
+
+.img2 {
+  width: 15%;
+  position: relative;
+  left: -45em;
+  top: 8em;
+}
+
+.img3 {
+  width: 15%;
+  position: relative;
+  right: -55em;
+  top: -12em;
+}
+
+.img4 {
+  position: relative;
+  left: -25em;
+}
+
+.img5 {
+  position: relative;
+  right: -30em;
+  top: -5em;
+}
+
+.img6 {
+  width: 15%;
+  position: relative;
+  left: -53em;
+  top: -20em;
+}
+
+.img7 {
+  width: 32%;
+  position: relative;
+  z-index: 1;
+  top: 10em;
+  left: 10em;
+}
+
+/* #GoldenBear */
+
+/* .border{
+  border: 3px solid purple;
+} */
+
+.goldenBear {
+  background-color: black;
+  height: 120em;
+  color: white;
+
+  padding: var(--margin-l-r);
+}
+.goldenBear-flex {
+  display: flex;
+  padding-top: 20em;
+  gap: 25em;
+}
+
+.position-text {
+  position: relative;
+  top: 6em;
+  line-height: 4em;
+}
+
+.goldenBear-pFont {
+  font-family: var(--inter);
+  font-size: 2.8em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.lightP {
+  color: white;
+  font-size: 1.8em;
+  font-family: var(--work);
 }
