@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Sans-Work";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --margin-l-r: 0 5vw;
+  --work: "Sans-Work";
+  --inter: "Inter";
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* #Header */
+
+header {
+  background-color: black;
+  height: 70.7vh;
+  position: relative;
+  color: white;
+}
+
+.lineImg {
+  height: 18vh;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.topSection {
+  position: relative;
+  top: 30%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header p {
+  font-family: var(--work);
+  font-size: 2em;
+  padding-bottom: 2rem;
+}
+
+header h1 {
+  font-family: var(--inter);
+  font-size: 9.6em;
+  line-height: 75%;
+}
+
+.style-h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-family: var(--work);
+  padding-bottom: 1.5%;
+}
+
+nav img {
+  width: 4.5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--margin-l-r);
+  position: relative;
+  top: 50%;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  line-height: 3vh;
+  padding: 0 2%;
+  border: 1px solid #aaaaaa;
+}
