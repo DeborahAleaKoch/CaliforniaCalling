@@ -33,14 +33,14 @@ img {
 
 header {
   background-color: black;
-  height: 55vw;
+  /* height: 55vw; */
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   border: 2px solid red;
-  margin-bottom: 20px;
+  padding-bottom: 10vh;
 }
 
 .lineImg {
@@ -58,17 +58,17 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 15em;
+  padding-bottom: 30vh;
 }
 
 header p {
   font-family: var(--work);
-  font-size: 2em;
+  font-size: 4em;
 }
 
 header h1 {
   font-family: var(--inter);
-  font-size: 9.6em;
+  font-size: 15.6em;
   line-height: 75%;
 }
 
@@ -98,9 +98,10 @@ nav button {
   background-color: black;
   color: white;
   line-height: 3vh;
-  padding: 0 2%;
+  padding: 0 2em;
   border: 1px solid #aaaaaa;
   transition: 0.3s ease-in-out 0.3s;
+  font-size: 2vh;
 }
 
 nav button:hover {
@@ -111,13 +112,13 @@ nav button:hover {
 /* #MAIN */
 main {
   border: 5px solid green;
-  height: 290em;
+  /* height: 290em; */
   /* background-color: blueviolet; */
 }
 
 .heroSection {
   background-color: black;
-  height: 120em;
+  height: 240em;
   border: 5px solid orangered;
 }
 .heroSection {
@@ -131,23 +132,27 @@ main {
   font-weight: 600;
   font-size: 8vw;
   line-height: 7.2vw;
-  padding-bottom: 10vh;
+  /* padding-bottom: 10vh; */
 }
 .heroSection article p {
   font-family: var(--work);
-  font-size: 1.4em;
+  font-size: 2vh;
   margin-bottom: 1em;
 }
 
 .heroSection h2 {
-  font-size: 8.2em;
+  font-size: 10.2vh;
   font-family: var(--inter);
   font-weight: 600;
   margin-bottom: 2vh;
 }
 /* !!Vielleicht als backgound anlegen?? */
 .mapPosition {
-  position: relative;
+  background-image: url("../img/map.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  /* position: relative; */
+  padding: 8vh 0;
 }
 
 .map {
@@ -165,17 +170,17 @@ main {
 } */
 
 .mainImg {
-  width: 45em;
+  width: 65em;
   border: 3px solid deeppink;
 }
 
 h3 {
   font-family: var(--inter);
-  font-size: 8.3rem;
+  font-size: 12.3em;
 }
 .stuckSize {
   font-family: var(--work);
-  font-size: 1.6em;
+  font-size: 2.6em;
   line-height: 2em;
 }
 
@@ -194,40 +199,40 @@ h3 {
 
 .img1 {
   position: relative;
-  top: -5em;
-  left: 30%;
+  top: -15em;
+  left: 20%;
   z-index: 1;
 }
 
 .img2 {
-  width: 15%;
+  width: 18%;
   position: relative;
-  left: -45em;
+  left: -35%;
   top: 8em;
 }
 
 .img3 {
-  width: 15%;
+  width: 18%;
   position: relative;
-  right: -55em;
-  top: -12em;
+  right: -41%;
+  top: -12%;
 }
 
 .img4 {
   position: relative;
-  left: -25em;
+  left: -25%;
 }
 
 .img5 {
   position: relative;
-  right: -30em;
+  right: -20%;
   top: -5em;
 }
 
 .img6 {
-  width: 15%;
+  width: 18%;
   position: relative;
-  left: -53em;
+  left: -33%;
   top: -20em;
 }
 
@@ -241,34 +246,39 @@ h3 {
 
 /* #GoldenBear */
 
-/* .border{
+.border {
   border: 3px solid purple;
-} */
+}
 
 .goldenBear {
   background-color: black;
-  height: 120em;
+  height: 220em;
   color: white;
 
   padding: var(--margin-l-r);
 }
+
 .goldenBear-flex {
   display: flex;
-  padding-top: 20em;
-  gap: 25em;
+  padding-top: 25vh;
+  gap: 29.5vh;
+}
+
+.goldenBear-flex article {
+  width: 20vw;
 }
 
 .position-text {
-  position: relative;
-  top: 6em;
-  line-height: 4em;
+  width: 120vw;
+  font-size: 1.8rem;
 }
 
 .goldenBear-pFont {
   font-family: var(--inter);
-  font-size: 2.8em;
+  font-size: 3.8vh;
   font-weight: bold;
   margin-bottom: 1em;
+  width: 70vh;
 }
 
 .lightP {
@@ -276,3 +286,69 @@ h3 {
   font-size: 1.8em;
   font-family: var(--work);
 }
+
+.goldenBearImgSize {
+  padding-top: 20vh;
+  width: 60%;
+}
+
+.goldenBearImgSize1 {
+  width: 34%;
+  /* height: 40%; */
+  position: relative;
+  top: -10em;
+  right: 15em;
+}
+
+/* #PoppyBear */
+
+.border1 {
+  border: 3px solid fuchsia;
+}
+
+.poppyBear-flex {
+  border: 3px solid turquoise;
+
+  display: flex;
+  /* padding-top: 25vh; */
+  gap: 29.5vh;
+  /* padding-top: 40em; */
+  margin-bottom: 20vh;
+}
+
+.poppyBear {
+  padding: var(--margin-l-r);
+  /* background-image: url("../img/cc-circle-2.png"); */
+  /* background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 30%; */
+  color: black;
+}
+
+.animationCircle {
+  width: 50%;
+  height: auto;
+  position: relative;
+  right: -65vw;
+  top: -25em;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.poppyPics {
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+.poppyPaint {
+  width: 30%;
+  position: relative;
+  left: 7em;
+}
+
+.poppyRose {
+  width: 60%;
+}
+
+/* # Section gray. behind the rosebear */
+
