@@ -126,7 +126,7 @@ main {
 
 .heroSection {
   background-color: black;
-  height: 240em;
+  height: 150em;
   border: 5px solid orangered;
 }
 .heroSection {
@@ -260,7 +260,7 @@ h3 {
 
 .goldenBear {
   background-color: black;
-  height: 220em;
+  height: 150em;
   color: white;
 
   padding: var(--margin-l-r);
@@ -312,7 +312,7 @@ h3 {
 
 .border1 {
   border: 3px solid fuchsia;
-  height: 180vh;
+  height: 200vh;
 }
 
 .poppyBear-flex {
@@ -344,7 +344,7 @@ h3 {
   z-index: -1;
   /* overflow: hidden; */
 
-  /* animation: circle 13s linear infinite; */
+  animation: circle 13s linear infinite;
 }
 
 @keyframes circle {
