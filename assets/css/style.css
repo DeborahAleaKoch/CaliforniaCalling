@@ -8,6 +8,11 @@
   src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
 }
 
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora/Lora-VariableFont_wght.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +27,7 @@ html {
   --margin-l-r: 0 5vw;
   --work: "Sans-Work";
   --inter: "Inter";
+  --lora: "Lora";
 }
 
 img {
@@ -387,9 +393,9 @@ footer {
   padding: var(--margin-l-r);
 }
 
-.footer-section-margin-top {
+/* .footer-section-margin-top {
   margin-top: 12vh;
-}
+} */
 
 footer article {
   padding-bottom: 5vh;
@@ -415,3 +421,52 @@ footer article {
   font-family: var(--work);
   padding-bottom: 2vh;
 }
+
+.banner {
+  font-family: var(--lora);
+  font-size: 8.8rem;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+}
+
+.banner p {
+  /* display: inline-block; */
+  width: 150%;
+  position: relative;
+  transform: rotate(45deg);
+  top: 35vh;
+  background-color: white;
+  right: -95vh;
+  border: 2px solid red;
+
+  font-family: var(--lora);
+  font-size: 8.8rem;
+  font-weight: bold;
+  color: black;
+
+  animation: flow 3s 2s infinite ease-in-out alternate;
+}
+
+.banner span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+
+/* @keyframes flow {
+  0% {
+      transform: translate(0 0) rotate(45deg);
+  }
+
+  25% {
+      transform: translate(150px, 200px) rotate(45deg);
+  }
+
+  50% {
+      transform: translate(0 0) rotate(45deg);
+  }
+
+  75% {
+      transform: translate(-200px, -200px) rotate(45deg);
+  }
+} */
